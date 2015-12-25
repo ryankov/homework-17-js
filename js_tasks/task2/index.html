@@ -1,0 +1,40 @@
+<!--Задача 2:
+   Напишете JavaScript, който да връща броя на anchors (<а>) в HTML
+   документ.-->
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Problem 2</title>
+   <body>
+      <div id="calc">
+         <label> Result:</label>
+         <input size="40" id="result" type="text">
+         <a></a><a><A></A></a><a></a><a></a><a><A></A></a><a></a>
+         <a></a><a><A></A></a><a></a><a></a><a><A></A></a><a></a>
+         <a></a><a><A></A></a><a></a><a></a><a><A></A></a><a></a>
+         <a></a><a><A></A></a><a></a><a></a><a><A></A></a><a></a>
+         <a></a><a><A></A></a><a></a><a></a><a><A></A></a><a></a>
+         <a></a><a><A></A></a><a></a><a></a><a><A></A></a><a></a>
+         <a></a><a><A></A></a><a></a><a></a><a><A></A></a><a></a>
+         <a></a><a><A></A></a><a></a><a></a><a><A></A></a><a></a>
+         <a></a><a><A></A></a><a></a><a></a><a><A></A></a><a></a>
+         <a></a><a><A></A></a><a></a><a></a><a><A></A></a><a></a>
+         <a></a><a><A></A></a><a></a><a></a><a><A></A></a><a></a>
+         <button onclick="findCountOfAnchors()">Count a</button>
+      </div>
+      <script>
+         function findCountOfAnchors()
+         {   
+         var innerHtml = document.documentElement.innerHTML;
+         var counter = 0;
+         for( var i = 0; i < innerHtml.length-2; i++){
+             if(innerHtml[i]+innerHtml[i+1]+innerHtml[i+2] == "<a>" || innerHtml[i]+innerHtml[i+1]+innerHtml[i+2] == "<A>" ){
+                 counter++;
+             }
+         }
+         document.getElementById('result').value= counter;
+         }
+      </script>
+   </body>
+</html>

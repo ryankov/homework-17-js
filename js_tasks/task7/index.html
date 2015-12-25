@@ -1,0 +1,46 @@
+<!--Задача 7:
+Напише JavaScript функционалност, която конвертира от kg в lb и
+обратно.
+1kg = 2.20462262 lb-->
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+    <div id="calculator">
+      <div>
+        <label for="convertPayload">Convert &nbsp;&nbsp;&nbsp; </label><input id="convertPayload">
+          <select id="firstOption"><option value="kg">kg</option><option value="lb">lb</option></select>
+          <select id="secondOption"><option value="lb">lb</option><option value="kg">kg</option></select>
+          <button onclick="Converter()"> Calculate:</button>
+        </div>
+        <div>
+        <label id="result">Result</label>
+        </div>
+       </div>
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </body>
+</html>

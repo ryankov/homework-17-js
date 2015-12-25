@@ -1,0 +1,17 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#calculator {
+    width: 30%;
+    min-width: 300px;
+    margin-left: 15%;
+    border 0.4em #e3dfdf;
+    border-style: solid;
+    border-radius: 0.5em;
+    padding: 3em;
+}
+#calculator div{
+    margin-bottom: 0.5em;
+}

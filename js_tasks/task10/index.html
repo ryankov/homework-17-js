@@ -1,0 +1,52 @@
+<!--Задача 10:
+Направете валидация на формата за регистрация. Ако потребителя не
+е въвел някое поле направете го червено и до него напишете
+съобщение. Когато потребителя въведе полето да се махна червеното.
+Когато потребителя избере държава other да му се показва още едно
+поле да изпише държавата, от която е.-->
+<!doctype html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div id="registerForm">
+        <div>
+        <label>Login name</label>
+        <input type="text" name="name" class="registerInput">
+        </div>
+        
+        <div>
+        <label>E-mail</label>
+        <input type="text" name="email" class="registerInput">
+        </div>
+        <div>
+        <label>Password</label>
+        <input type="text" name="pass" class="registerInput">
+        </div>
+        <div>
+        <label>From</label>
+            <select id="selectCountry">
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Other">Specify other</option>
+            </select>
+            
+        </div>
+        <div id="otherSelect" style="display: none;">
+            <label>Other Country</label>
+            <input type="text" class="registerInput">
+        </div>
+        <div>
+            <button>Send</button>
+        </div>
+        </div>
+    </body>
+        <script type="text/jscript" src="js/main.js"></script>
+
+</html>

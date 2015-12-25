@@ -1,0 +1,40 @@
+<!--Задача 9:
+Направете страница, в която има албум с малки снимки и при слагане
+на мишка върху някоя снимка да се показва по-голяма снимка на
+малката. При махане на мишката от снимката да се скрива голямата
+снимка.-->
+<!doctype html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="row  custom">
+            <div class="col-lg-2"><img onmouseover="increaseSize(this)" onmouseout="normalSize(this)" src="img/0.jpg"></div>
+            <div class="col-lg-2"><img onmouseover="increaseSize(this)" onmouseout="normalSize(this)" src="img/1.jpg"></div>
+            <div class="col-lg-2"><img onmouseover="increaseSize(this)" onmouseout="normalSize(this)" src="img/2.jpg"></div>
+            <div class="col-lg-2"><img onmouseover="increaseSize(this)" onmouseout="normalSize(this)" src="img/3.jpg"></div>
+        </div> 
+        <div class="row  custom">
+            <div class="col-lg-2"><img onmouseover="increaseSize(this)" onmouseout="normalSize(this)" src="img/4.jpg"></div>
+            <div class="col-lg-2"><img onmouseover="increaseSize(this)" onmouseout="normalSize(this)" src="img/5.jpg"></div>
+            <div class="col-lg-2"><img onmouseover="increaseSize(this)" onmouseout="normalSize(this)" src="img/6.jpg"></div>
+           
+        </div> 
+        <div class="row  custom">
+            <div class="col-lg-2"><img onmouseover="increaseSize(this)" onmouseout="normalSize(this)" src="img/7.jpg"></div>
+            <div class="col-lg-2"><img onmouseover="increaseSize(this)" onmouseout="normalSize(this)" src="img/8.jpg"></div>
+            <div class="col-lg-2"><img onmouseover="increaseSize(this)" onmouseout="normalSize(this)" src="img/9.jpg"></div>
+           
+        </div> 
+       
+        
+    </body>
+        <script type="text/jscript" src="js/main.js"></script>
+
+</html>
